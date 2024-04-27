@@ -1,0 +1,14 @@
+so about compiler flags, you should know about std=c11, which means using the c11 standards for compiling,
+-pedantic means to be picky about the standards
+and putting a W in front will show warnings about code not adhering to standards
+
+You can also compile multiple c files into one exec
+
+FILE* name
+stdin
+stdout
+stderr
+Description:
+Standard Input, generally the keyboard by default 
+Standard Output, generally the screen by default
+Standard Error, generally the screen by default, as well
