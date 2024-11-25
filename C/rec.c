@@ -20,6 +20,11 @@ Node *create_btree(Node* root_node, unsigned node_num) {
         fputs("NULL root_node\n", stderr);
         return NULL;
     }
+
+    if (!node_num) {
+        fputs("Can't alloc 0\n", stderr);
+        return NULL;
+    }
     
     node_arr = calloc(node_num, sizeof(Node));
     if (!node_arr) {
